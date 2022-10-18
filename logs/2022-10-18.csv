@@ -1,5 +1,5 @@
-Unnamed: 0,Id,Task Name,Type,Description,Status
-0,NP-165,tableRecordsData,connecting with backend,table records data live data implementation,INPROGRESS
-0,NP-193,admin panel and front end differences in roomlist,debug ,---------||------------,INPROGRESS
-0,NP-203&210,load button issue,debug/optimization,loadbutton refresh bug,INPROGRESS
-0,NP-215,cash record last time played date,implementation,implement last time played for table,INPROGRESS
+,Id,Task Name,Type,Description,Status
+0,1,1,1,1,INPROGRESS
+1,2,2,2,2,INPROGRESS
+2,3,3,3,3,INPROGRESS
+3,3,3,3,3,INPROGRESS
