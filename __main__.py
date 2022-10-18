@@ -37,7 +37,7 @@ def done():
 @app.command()
 def pending():
     tasker().summary()
-    task = input("which task to mark done?! \n")
+    task = input("which task to mark pending?! \n")
     tasker().pending(task)
     tasker().summary()
 
