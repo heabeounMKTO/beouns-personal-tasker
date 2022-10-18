@@ -1,13 +1,14 @@
+from asyncio import create_task
 from email import parser
 import string
 from venv import create
 from tasker import tasker
 from art import tprint, text2art
-import argparse
+import typer
+from typing import Optional
 
 
 
-<<<<<<< HEAD
 
 app = typer.Typer()
 
@@ -35,7 +36,7 @@ def done():
 @app.command()
 def pending():
     tasker().summary()
-    task = input("which task to mark pending?! \n")
+    task = input("which task to mark done?! \n")
     tasker().pending(task)
     tasker().summary()
 
@@ -69,26 +70,13 @@ def delete():
         tasker().summary()
     
     
-=======
->>>>>>> ece872fe663020a69849d305b7bb00c0f34911b7
 def main():
-
-    print(text2art("bpt"), "lazy tasker for lazy people")
-    
-    parser = argparse.ArgumentParser()
-
-    
-    parser.add_argument("-c",  help="creates a new task, example: create [TaskId]")
-    parser.add_argument('-d', help="deletes a task , example: delete [TaskId]")
-    parser.add_argument('-s', help="summary of all tasks")
-    parser = parser.parse_args()
- 
-    
-    print(parser)
-    
-    
+    print(text2art("BPT"), "beoun's personal tasker")
+    app()
+        
     
         
 if __name__ == "__main__":  
    main()
+   
     
